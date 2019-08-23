@@ -1,11 +1,11 @@
 {
-  "name": "babel-presets",
-  "version": "1.0.0",
+  "name": "lpx-babel-presets",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --config-file ./babel.config.js --source-maps",
-    "upload": "npm publish",
+    "upload": "npm run build && npm publish",
     "seeUptate": "ncu",
     "update": "ncu -a"
   },
